@@ -11,8 +11,8 @@ Each folder includes:
 ```
 algorithm/
 ├── 10026번： 적록색약/
-│ ├── README.md # Problem description
-│ └── main.py # Python solution
+│   ├── README.md # Problem description
+│   └── main.py # Python solution
 ```
 
 ## 📌 Notes
