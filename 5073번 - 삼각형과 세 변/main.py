@@ -1,38 +1,28 @@
 #  **************************************************************************  #
 #                                                                              #
 #                                                       :::    :::    :::      #
-#    Problem Number: 5585                              :+:    :+:      :+:     #
+#    Problem Number: 5073                              :+:    :+:      :+:     #
 #                                                     +:+    +:+        +:+    #
 #    By: jieunb_b <boj.kr/u/jieunb_b>                +#+    +#+          +#+   #
 #                                                   +#+      +#+        +#+    #
-#    https://boj.kr/5585                           #+#        #+#      #+#     #
-#    Solved: 2025/07/28 23:11:13 by jieunb_b      ###          ###   ##.kr     #
+#    https://boj.kr/5073                           #+#        #+#      #+#     #
+#    Solved: 2025/09/04 13:52:01 by jieunb_b      ###          ###   ##.kr     #
 #                                                                              #
 #  **************************************************************************  #
-# import sys
-# input = sys.stdin.readline
-
-# n = int(input())
-
-# money = [500, 100, 50, 10, 5, 1]
-# res = 0
-# n = 1000-n
-# for i in range(len(money)):
-#     res += n // money[i]
-#     n = n % money[i]
-    
-# print(res)
-
 import sys
 input = sys.stdin.readline
 
-coins = [500, 100, 50, 10, 5, 1]
-pay = int(input())
-back = 1000-pay
-count = 0
-for coin in coins:
-    if back == 0:
+while(True):
+    edge = list(map(int, input().split()))
+    if edge == [0, 0, 0]:
         break
-    count += back // coin
-    back = back % coin
-print(count)
+    edge.sort()
+    if edge[0] == edge[1] and edge[1] == edge[2]:
+        print('Equilateral')
+    elif edge[2] < edge[0] + edge[1]:
+        if edge[0] == edge[1] or edge[1] == edge[2]:  
+            print('Isosceles')
+        else:
+            print('Scalene')
+    else:
+        print('Invalid')
