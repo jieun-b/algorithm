@@ -1,4 +1,4 @@
-# 🧠 Baekjoon Algorithm Solutions
+# Baekjoon Algorithm Solutions
 
 This repository contains Python solutions to problems from the Baekjoon Online Judge.
 
@@ -6,7 +6,7 @@ Each folder includes:
 - `README.md`: Problem description (from Baekjoon)
 - `main.py`: My solution code
 
-## 📂 Example Structure
+## Example Structure
 
 ```
 algorithm/
@@ -15,7 +15,7 @@ algorithm/
 │   └── main.py # Python solution
 ```
 
-## 📌 Notes
+## Notes
 - Language: Python 3
 - Level: Bronze ~ Gold
 - Focus: Greedy, Graph, Implementation
