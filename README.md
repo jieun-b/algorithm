@@ -1,6 +1,7 @@
 # Algorithm Problem Solutions
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+
 ![Solved.ac](http://mazassumnida.wtf/api/v2/generate_badge?boj=jieunb_b)
 
 This repository contains Python solutions to problems from **[Baekjoon Online Judge](https://www.acmicpc.net/)**.
