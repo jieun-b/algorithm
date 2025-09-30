@@ -1,7 +1,7 @@
 # Algorithm Problem Solutions
 
 This repository contains solutions to algorithm problems from **[Baekjoon Online Judge](https://www.acmicpc.net/)**.  
-All solutions are implemented in **Python** and organized by **algorithm category** for easier navigation.
+All solutions are implemented in **Python** and organized by **algorithm category**.
 
 ![Solved.ac](http://mazassumnida.wtf/api/v2/generate_badge?boj=jieunb_b)
 
