@@ -4,26 +4,16 @@ This repository contains Python solutions to problems from the Baekjoon Online J
 
 ## Category Structure
 
-1. **01_Data_Structures**
-   - Stack_Queue
-   - Set
-   - Heap
-2. **02_Sorting_Searching**
-   - Binary_Search
-3. **03_Graph_Traversal**
-   - Dijkstra
-   - BFS
-   - DFS
-4. **04_Dynamic_Programming**
-   - Basic_DP
-   - Knapsack
-   - LCS_LIS
-5. **05_Greedy**
-6. **06_Backtracking**
-7. **07_Two_Pointers**
-8. **08_Tree**
-9. **09_Math_Combinatorics**
-   - Geometry
-   - Math
-10. **10_String**
-11. **11_Implementation_Simulation**
+| No. | Category                 | Subtopics                    |
+|-----|---------------------------|-------------------------------|
+| 01  | Data Structures           | Stack_Queue, Set, Heap        |
+| 02  | Sorting & Searching       | Binary_Search                 |
+| 03  | Graph Traversal           | Dijkstra, BFS, DFS            |
+| 04  | Dynamic Programming       | Basic_DP, Knapsack, LCS_LIS   |
+| 05  | Greedy                    | –                             |
+| 06  | Backtracking              | –                             |
+| 07  | Two Pointers              | –                             |
+| 08  | Tree                      | –                             |
+| 09  | Math & Combinatorics      | Geometry, Math                |
+| 10  | String                    | –                             |
+| 11  | Implementation & Simulation | –                          |
