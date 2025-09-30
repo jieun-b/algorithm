@@ -1,21 +1,29 @@
-# Baekjoon Algorithm Solutions
+# Algorithm Problem Solutions
 
 This repository contains Python solutions to problems from the Baekjoon Online Judge.
 
-Each folder includes:
-- `README.md`: Problem description (from Baekjoon)
-- `main.py`: My solution code
+## Category Structure:
 
-## Example Structure
-
-```
-algorithm/
-├── 10026번： 적록색약/
-│   ├── README.md # Problem description
-│   └── main.py # Python solution
-```
-
-## Notes
-- Language: Python 3
-- Level: Bronze ~ Gold
-- Focus: Greedy, Graph, Implementation
+- **01_Data_Structures**
+    - Stack_Queue
+    - Set
+    - Heap
+- **02_Sorting_Searching**
+    - Binary_Search
+- **03_Graph_Traversal**
+    - Dijkstra
+    - BFS
+    - DFS
+- **04_Dynamic_Programming**
+    - Basic_DP
+    - Knapsack
+    - LCS_LIS
+- **05_Greedy**
+- **06_Backtracking**
+- **07_Two_Pointers**
+- **08_Tree**
+- **09_Math_Combinatorics**
+    - Geometry
+    - Math
+- **10_String**
+- **11_Implementation_Simulation**
