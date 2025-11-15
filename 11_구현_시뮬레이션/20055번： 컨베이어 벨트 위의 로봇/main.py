@@ -13,39 +13,41 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
-N, K = map(int, input().split())
-A = list(map(int, input().split()))
+# 벨트 회전은 push/pop으로 실행
+# 벨트가 회전할 때 리스트도 자르고 추가하기
 
-a = deque()
-robot = deque()
-for i in range(len(A)-1,-1,-1):
-    a.append(A[i])
-for _ in range(N):
-    robot.append(0)
+# 벨트 위의 상태는 리스트로 저장
+# 로봇 이동
+# 내구도가 0인 칸의 정보는 계속 기록
 
-count = 0
+n, k = map(int, input().split())
+belt = deque(map(int, input().split()))
+robot = [False]*n
+
+zero = 0
+step = 0
 while(True):
-    # step 1
-    tmp = a.popleft()
-    a.append(tmp)
-    robot.popleft()
-    robot.append(0)
-    robot[0] = 0
-    # step 2
-    for i in range(1,N):
-        if robot[i] == 1:
-            if robot[i-1] == 0 and a[i+N-1] > 0:
-                robot[i-1] = 1
-                robot[i] = 0
-                a[i+N-1] = a[i+N-1] - 1
-    robot[0] = 0
-    # step 3
-    if a[-1] != 0:
-        robot[-1] = 1
-        a[-1] = a[-1] - 1
-    # step 4
-    count += 1
-    zero = a.count(0)
-    if zero >= K:
+    step += 1
+    # 벨트, 로봇 회전
+    belt.rotate(1)
+    robot.pop()
+    robot.insert(0, False)
+    robot[-1] = False
+    # 로봇 이동, 이동하는 경우 내구도 감소
+    for i in range(n-2, -1, -1):
+        if robot[i] and not robot[i+1] and belt[i+1] > 0:
+            robot[i], robot[i+1] = False, True
+            belt[i+1] -= 1
+            if belt[i+1] == 0:
+                zero += 1
+    robot[-1] = False
+    # 로봇 올리기 
+    if belt[0] > 0:
+        robot[0] = True
+        belt[0] -= 1
+        if belt[0] == 0:
+            zero += 1
+    if zero >= k:
         break
-print(count)
+
+print(step)
